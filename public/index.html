@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/screen.css" />
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <a href="#Menu">Menu</a>
       <a href="#ChallengeWinner">Challenge Winner!</a>
       <a href="#Events">Upcoming Events</a>
@@ -17,7 +17,8 @@
     </nav>
     <section>
       <!-- Restaurant Name -->
-      <img src="./images/gnocchi.jpg" height="700" width="1200" />
+      <img class="gnocchi" src="./images/gnocchi.jpg" />
+      <!-- height="700" width="1200"-->
       <h1>Giuseppe's Generous Gnocchi</h1>
       <p>
         At Giuseppe's, we do Italian food just the way mama made it when we were
@@ -29,21 +30,29 @@
     </section>
 
     <hr />
+    <h2>Menu</h2>
     <section id="Menu">
       <!-- Menu -->
-      <h2>Menu</h2>
-      <h3>Pasta!</h3>
       <ol>
-        <li>Lasagna!</li>
-        <img src="./Images/lasagna.jpg" />
-        <p>
-          Our lasagna is homemade fresh daily! Homemade italian sausage,
-          ricotta, and mozzarella cheese layered between fresh pasta and baked
-          in our family tomato sauce. Garnished with fresh mozzarella.
-        </p>
-        <li>Meatballs!</li>
-        <img src="Images/meatball.jpg" />
-        <p></p>
+        <li><h4>Lasagna!</h4></li>
+        <section class="flex">
+          <img src="./Images/lasagna.jpg" />
+          <p>
+            Our lasagna is homemade fresh daily! Homemade italian sausage,
+            ricotta, and mozzarella cheese layered between fresh pasta and baked
+            in our family tomato sauce. Garnished with fresh mozzarella.
+          </p>
+        </section>
+        <br />
+        <li><h4>Meatballs!</h4></li>
+        <section class="flex">
+          <img src="Images/meatball.jpg" />
+          <p>
+            Our meatballs are made of 100% elk meat, Italian bread crumbs, and
+            various herbs and spices. Stop in for a life-changing meatball and
+            pasta! We promise, you won't regret it!
+          </p>
+        </section>
       </ol>
       <h3>Pizza</h3>
       <p>
@@ -54,13 +63,15 @@
         mozzarella cheese that tops our pizzas is special. I
       </p>
       <ol start="3">
-        <li>Parmesan Prosciutto with Mushroom and Balsamic Glaze</li>
-        <img src="./Images/pizza.jpg" />
-        <p>
-          Our parmesan prosciutto pizza is made with the Freshes ingredients! We
-          are proud to say that we use a 35 year old balsamic vinegar as a sweet
-          addition to the top of your pizza!
-        </p>
+        <li><h4>Parmesan Prosciutto with Mushroom and Balsamic Glaze</h4></li>
+        <section class="flex">
+          <img src="./Images/pizza.jpg" />
+          <p>
+            Our parmesan prosciutto pizza is made with the Freshes ingredients!
+            We are proud to say that we use a 35 year old balsamic vinegar as a
+            sweet addition to the top of your pizza!
+          </p>
+        </section>
       </ol>
     </section>
 
@@ -68,22 +79,26 @@
       <!-- Hero -->
       <hr />
       <h2>Pasta Challenge Winner</h2>
-      <img src="./Images/Jimbob.jpg" />
-      <p>
-        JimBob Cooter has been a long time fan of food challenges and has not
-        shied away from this one. If he's not directing Matty Stafford to whip a
-        ball downfield, he's at a restaurant trying to expand his stomach. That
-        means that this man was ready to take on the 4 pound challenge!
-      </p>
-      <p>
-        The four pound challenge consists of consuming 4 pounds of elk meat
-        spaghetti made with our fresh pasta and our owner harvested elk meat.
-        You have 2 hours to finish your plates or your meal isn't free, so work
-        fast but smart! In order to take over the spot on the website, then you
-        must finish all four pounds in under 1hr and 36 minutes. All times are
-        rounded to the next nearest minute, and tenths and hundredths of seconds
-        will be used only for record-breaking measurement.
-      </p>
+      <section class="flex">
+        <img class="smallPic" src="./Images/Jimbob.jpg" />
+        <p>
+          JimBob Cooter has been a long time fan of food challenges and has not
+          shied away from this one. If he's not directing Matty Stafford to whip
+          a ball downfield, he's at a restaurant trying to expand his stomach.
+          That means that this man was ready to take on the 4 pound challenge!
+          <br />
+          <br />
+
+          The four pound challenge consists of consuming 4 pounds of elk meat
+          spaghetti made with our fresh pasta and our owner harvested elk meat.
+          You have 2 hours to finish your plates or your meal isn't free, so
+          work fast but smart! In order to take over the spot on the website,
+          then you must finish all four pounds in under 1hr and 36 minutes. All
+          times are rounded to the next nearest minute, and tenths and
+          hundredths of seconds will be used only for record-breaking
+          measurement.
+        </p>
+      </section>
     </section>
 
     <section id="Locations">
@@ -137,6 +152,8 @@
       </ul>
       <p>Otherwise please use the following contact form:</p>
     </section>
-    <footer>Made with love in the pursuit of happiness. 🇺🇸</footer>
+    <footer class="navbar">
+      Made with love in the pursuit of happiness. 🇺🇸
+    </footer>
   </body>
 </html>
